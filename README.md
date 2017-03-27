@@ -21,8 +21,8 @@ This is an alternative repository for the latest libuv packages using alpine
 You could download the package directly as well with:
 
     $ curl -O \
-    https://ghostbar.github.io/alpine-pkg-nodejs/v3.2/pkgs/x86_64/nodejs-5.6.0-r0.apk
-    # apk add --allow-untrusted nodejs-5.6.0-r0.apk
+    https://ghostbar.github.io/alpine-pkg-libuv/v3.5/pkgs/x86_64/libuv-1.11.0-r0.apk
+    # apk add --allow-untrusted libuv-1.11.0-r0.apk
 
 **Which way is better to download?**
 
@@ -47,11 +47,3 @@ the package name.
 
 You need to use `--allow-untrusted` when launching `apk` commands, including
 `apk update`.
-
-**Is this really necessary? I could just install the latest nodejs from edge,
-don't I?**
-
-Yes, you can install it but it won't work. v3.2 and edge are using different gcc
-(4.9 on v3.2 and 5.2 on edge) and there was a change of ABI which renders the
-package unusable if linked with an older gcc installation. So when you try to
-install a package with npm it will give you issues with symbols not found.
