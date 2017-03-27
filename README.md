@@ -1,7 +1,7 @@
 alpine-pkg-libuv
 ================
 
-+ **libuv**: 1.11.0-r0 (`armhf` && `x86_64`)
++ **libuv**: 1.11.0-r0 (`x86_64`)
 
 [More alpine-related stuff here!](https://github.com/ghostbar/alpine-devel)
 
